@@ -9,6 +9,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    let modelOfData = DataForProject.self
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,31 +24,33 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return modelOfData.italian.count
     }
 //Mark:
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let italianRest = modelOfData.getRestaurants(typeOfRestaurant: .italian)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-        cell.textLabel?.text = "Cell"
-
+        cell.textLabel?.text = italianRest[indexPath.row]
+        cell.detailTextLabel?.text = "Итальянский"
+        cell.imageView?.image = UIImage(named: "Image")
+        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2
+        cell.imageView?.clipsToBounds = true
         return cell
     }
 
     /*
-    // Override to support conditional editing of the table view.
+     Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
+         Return false if you do not want the specified item to be editable.
         return true
     }
     */
 
-    /*
+
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -56,7 +60,6 @@ class TableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
     /*
     // Override to support rearranging the table view.

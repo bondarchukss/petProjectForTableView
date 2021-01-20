@@ -14,6 +14,7 @@
 		1481A13B25B09BB30053C7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1481A13925B09BB30053C7B4 /* LaunchScreen.storyboard */; };
 		1481A14525B09BDE0053C7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1481A14425B09BDE0053C7B4 /* Main.storyboard */; };
 		1481A14825B09C410053C7B4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481A14725B09C410053C7B4 /* TableViewController.swift */; };
+		14C1F12B25B75B0800EE9664 /* TestDataForPetProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1481A13C25B09BB30053C7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1481A14425B09BDE0053C7B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1481A14725B09C410053C7B4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataForPetProject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		1481A12A25B09BB10053C7B4 /* petProject */ = {
 			isa = PBXGroup;
 			children = (
+				14C1F12925B7592B00EE9664 /* Model */,
 				1481A12B25B09BB10053C7B4 /* AppDelegate.swift */,
 				1481A12D25B09BB10053C7B4 /* SceneDelegate.swift */,
 				1481A14425B09BDE0053C7B4 /* Main.storyboard */,
@@ -68,6 +71,14 @@
 				1481A13425B09BB10053C7B4 /* petProject.xcdatamodeld */,
 			);
 			path = petProject;
+			sourceTree = "<group>";
+		};
+		14C1F12925B7592B00EE9664 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1481A12C25B09BB10053C7B4 /* AppDelegate.swift in Sources */,
+				14C1F12B25B75B0800EE9664 /* TestDataForPetProject.swift in Sources */,
 				1481A12E25B09BB10053C7B4 /* SceneDelegate.swift in Sources */,
 				1481A13625B09BB10053C7B4 /* petProject.xcdatamodeld in Sources */,
 				1481A14825B09C410053C7B4 /* TableViewController.swift in Sources */,
