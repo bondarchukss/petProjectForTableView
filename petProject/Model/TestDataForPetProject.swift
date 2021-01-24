@@ -9,8 +9,8 @@ import Foundation
 
 struct DataForProject {
 
-    static let italian = ["Практика by Darvin", "ИТАЛОНИЯ", "Остерия Марио", "Виа Романо"]
-    static let japanese = ["Кадриль", "Зодиак", "[KU:] рамен изакая бар"]
+    static let italian = ["Практика", "ИТАЛОНИЯ", "Остерия Марио", "Виа Романо"]
+    static let japanese = ["Кадриль", "Зодиак", "Рамен изакая бар"]
 
     enum TypesOfRestaurants: CaseIterable {
         case italian

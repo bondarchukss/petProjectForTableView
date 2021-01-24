@@ -33,22 +33,17 @@ class TableViewController: UITableViewController {
 //Mark:
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let italianRest = modelOfData.getRestaurants(typeOfRestaurant: .italian)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = italianRest[indexPath.row]
-        cell.detailTextLabel?.text = "Итальянский"
-        cell.imageView?.image = UIImage(named: "Image")
-        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2
-        cell.imageView?.clipsToBounds = true
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
+        cell.configureCell(name: italianRest[indexPath.row], type: "Итальянский", image: "Image")
         return cell
     }
 
-    /*
-     Override to support conditional editing of the table view.
+    
+    // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-         Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+
 
 
     // Override to support editing the table view.
