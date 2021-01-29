@@ -34,7 +34,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let italianRest = modelOfData.getRestaurants(typeOfRestaurant: .italian)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
-        cell.configureCell(name: italianRest[indexPath.row], type: "Итальянский", image: "Image")
+        cell.configureCell(name: italianRest[indexPath.row], type: "Итальянский", image: "image")
         return cell
     }
 
