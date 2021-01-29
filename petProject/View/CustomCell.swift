@@ -13,10 +13,10 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var typeOfRest: UILabel!
     @IBOutlet weak var imageOfRest: UIImageView!
     
-    func configureCell(name: String, type: String, image: String) {
+    func configureCell(name: String, type: String, image: UIImage) {
         nameOfRest.text = name
         typeOfRest.text = type
-        imageOfRest.image = UIImage.init(named: image)
+        imageOfRest.image = image
         imageOfRest.layer.cornerRadius = frame.size.height / 2
         imageOfRest.clipsToBounds = true
     }

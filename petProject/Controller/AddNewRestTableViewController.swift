@@ -9,12 +9,19 @@ import UIKit
 import SwiftUI
 
 class AddNewRestTableViewController: UITableViewController {
+    @IBOutlet weak var placeSave: UIBarButtonItem!
+    @IBOutlet weak var placeImage: UIImageView!
+    @IBOutlet weak var placeName: UITextField!
+    @IBOutlet weak var placeType: UITextField!
+    var newPlace: Places?
     
-    @IBOutlet weak var imageOfPlace: UIImageView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
+        
+        placeSave.isEnabled = false
+        
+        placeName.addTarget(self, action: #selector(textDidChanged), for: .editingChanged)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -51,11 +58,30 @@ class AddNewRestTableViewController: UITableViewController {
             view.endEditing(true)
         }
     }
+    @IBAction func cancelAddingNewRest(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
 }
 
 extension AddNewRestTableViewController: UITextFieldDelegate {
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+    }
+
+    @objc private func textDidChanged() {
+        if placeName.text?.isEmpty == true {
+            placeSave.isEnabled = false
+        } else {
+            placeSave.isEnabled = true
+        }
+    }
+    
+    func saveNewRestaurant() {
+        // TODO: Переделать проставление картинки
+        newPlace = Places(name: placeName.text!,
+                              type: placeType.text,
+                              image: placeImage.image)
     }
 }
 
@@ -76,9 +102,9 @@ extension AddNewRestTableViewController: UIImagePickerControllerDelegate, UINavi
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        imageOfPlace.image = info[.editedImage] as? UIImage
-        imageOfPlace.contentMode = .scaleToFill
-        imageOfPlace.clipsToBounds = true
+        placeImage.image = info[.editedImage] as? UIImage
+        placeImage.contentMode = .scaleToFill
+        placeImage.clipsToBounds = true
         dismiss(animated: true)
     }
 }

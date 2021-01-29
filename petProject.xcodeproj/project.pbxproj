@@ -16,7 +16,7 @@
 		1481A14825B09C410053C7B4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481A14725B09C410053C7B4 /* TableViewController.swift */; };
 		1484869B25BD9FB8009F29FE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484869A25BD9FB8009F29FE /* CustomCell.swift */; };
 		148A830625C0A4B3007B4332 /* AddNewRestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A830525C0A4B3007B4332 /* AddNewRestTableViewController.swift */; };
-		14C1F12B25B75B0800EE9664 /* TestDataForPetProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */; };
+		1495589825C4C27C00C9DA76 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495589725C4C27C00C9DA76 /* Places.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		1481A14725B09C410053C7B4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1484869A25BD9FB8009F29FE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		148A830525C0A4B3007B4332 /* AddNewRestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestTableViewController.swift; sourceTree = "<group>"; };
-		14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataForPetProject.swift; sourceTree = "<group>"; };
+		1495589725C4C27C00C9DA76 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		14C1F12925B7592B00EE9664 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */,
+				1495589725C4C27C00C9DA76 /* Places.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1481A12C25B09BB10053C7B4 /* AppDelegate.swift in Sources */,
-				14C1F12B25B75B0800EE9664 /* TestDataForPetProject.swift in Sources */,
 				1481A12E25B09BB10053C7B4 /* SceneDelegate.swift in Sources */,
 				1481A13625B09BB10053C7B4 /* petProject.xcdatamodeld in Sources */,
+				1495589825C4C27C00C9DA76 /* Places.swift in Sources */,
 				148A830625C0A4B3007B4332 /* AddNewRestTableViewController.swift in Sources */,
 				1484869B25BD9FB8009F29FE /* CustomCell.swift in Sources */,
 				1481A14825B09C410053C7B4 /* TableViewController.swift in Sources */,
