@@ -15,6 +15,7 @@
 		1481A14525B09BDE0053C7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1481A14425B09BDE0053C7B4 /* Main.storyboard */; };
 		1481A14825B09C410053C7B4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481A14725B09C410053C7B4 /* TableViewController.swift */; };
 		1484869B25BD9FB8009F29FE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484869A25BD9FB8009F29FE /* CustomCell.swift */; };
+		148A830625C0A4B3007B4332 /* AddNewRestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A830525C0A4B3007B4332 /* AddNewRestTableViewController.swift */; };
 		14C1F12B25B75B0800EE9664 /* TestDataForPetProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1481A14425B09BDE0053C7B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1481A14725B09C410053C7B4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1484869A25BD9FB8009F29FE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		148A830525C0A4B3007B4332 /* AddNewRestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestTableViewController.swift; sourceTree = "<group>"; };
 		14C1F12A25B75B0800EE9664 /* TestDataForPetProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataForPetProject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,12 +64,12 @@
 		1481A12A25B09BB10053C7B4 /* petProject */ = {
 			isa = PBXGroup;
 			children = (
+				148A830425C0A297007B4332 /* Controller */,
 				1484869925BD9C6B009F29FE /* View */,
 				14C1F12925B7592B00EE9664 /* Model */,
 				1481A12B25B09BB10053C7B4 /* AppDelegate.swift */,
 				1481A12D25B09BB10053C7B4 /* SceneDelegate.swift */,
 				1481A14425B09BDE0053C7B4 /* Main.storyboard */,
-				1481A14725B09C410053C7B4 /* TableViewController.swift */,
 				1481A13725B09BB30053C7B4 /* Assets.xcassets */,
 				1481A13925B09BB30053C7B4 /* LaunchScreen.storyboard */,
 				1481A13C25B09BB30053C7B4 /* Info.plist */,
@@ -82,6 +84,15 @@
 				1484869A25BD9FB8009F29FE /* CustomCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		148A830425C0A297007B4332 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1481A14725B09C410053C7B4 /* TableViewController.swift */,
+				148A830525C0A4B3007B4332 /* AddNewRestTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		14C1F12925B7592B00EE9664 /* Model */ = {
@@ -166,6 +177,7 @@
 				14C1F12B25B75B0800EE9664 /* TestDataForPetProject.swift in Sources */,
 				1481A12E25B09BB10053C7B4 /* SceneDelegate.swift in Sources */,
 				1481A13625B09BB10053C7B4 /* petProject.xcdatamodeld in Sources */,
+				148A830625C0A4B3007B4332 /* AddNewRestTableViewController.swift in Sources */,
 				1484869B25BD9FB8009F29FE /* CustomCell.swift in Sources */,
 				1481A14825B09C410053C7B4 /* TableViewController.swift in Sources */,
 			);
@@ -306,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4S63RW2TRZ;
 				INFOPLIST_FILE = petProject/Info.plist;
@@ -315,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bondarchuk.Sergey.petProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4S63RW2TRZ;
 				INFOPLIST_FILE = petProject/Info.plist;
@@ -334,6 +349,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bondarchuk.Sergey.petProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
